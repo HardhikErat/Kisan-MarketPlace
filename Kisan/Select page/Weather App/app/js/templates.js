@@ -219,9 +219,9 @@ function submitZip(zipcode){
 		localSave('country','in');
 		init();
 	}else{
-		localSave('zipcode',zipcode);
-		localSave('country','in');
-		init();
+		//localSave('zipcode',zipcode);
+		//localSave('country','in');
+		//init();
 		//alert("Zipcode must be 5 numbers.");
 	}
 }
