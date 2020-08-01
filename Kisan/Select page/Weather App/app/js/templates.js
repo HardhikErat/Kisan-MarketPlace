@@ -151,7 +151,7 @@ function templateSettings(){
 						</div>
 					</div>
 								
-					<input type="submit" onclick="event.preventDefault(); saveSettings()" value="Save" class="w100--s btn my2" placeholder="submit">
+					<input type="submit" onclick="event.preventDefault(); saveSettings()" value="Save" class="w100--s btn my2">
 				
 				</form>
 			</section>  
@@ -216,12 +216,9 @@ function verifyZip(zipcode){
 function submitZip(zipcode){
 	if( verifyZip(zipcode) ){
 		localSave('zipcode',zipcode);
-		localSave('country','in');
+		localSave('country','In');
 		init();
 	}else{
-		//localSave('zipcode',zipcode);
-		//localSave('country','in');
-		//init();
-		//alert("Zipcode must be 5 numbers.");
+		alert("Zipcode must be 5 numbers.");
 	}
 }
