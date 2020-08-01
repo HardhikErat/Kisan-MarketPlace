@@ -219,6 +219,8 @@ function submitZip(zipcode){
 		localSave('country','In');
 		init();
 	}else{
-		alert("Zipcode must be 5 numbers.");
+		localSave('zipcode',zipcode);
+		localSave('country','In');
+		init();
 	}
 }
