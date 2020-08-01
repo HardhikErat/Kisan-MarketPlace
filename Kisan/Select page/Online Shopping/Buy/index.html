@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a3943484db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="carousel.css">
+    <title>Online Shopping Store</title>
+</head>
+<body onload="render()">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+            <a class="text-white navbar-brand" href="#">
+                <i class="fa fa-shopping-bag"></i> Online Shopping Store
+            </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seeds">Seeds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fertilizers">Fertilizers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#irrigations">Irrigation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Back</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <a class="text-white nav-link" href="cart.html">
+                        <i class="fa fa-shopping-cart"></i> Shopping Cart <i style="color:yellow;" id="cart_n"></i>
+                    </a>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <div id="muCarousel" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="imgFilter first-slide" src="img/carousel/slide1.jpeg" alt="First Slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Online Shopping Store</h1>
+                            <p><a role="button" class="btn btn-lg btn-primary" href="#">Products</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container marketing">
+            <br>
+            <h2 id="seeds">Seeds</h2>
+            <hr>
+            <div class="row" id="fertilizerDIV"></div>
+            <h2 id="fertilizers">Fertilizers</h2>
+            <hr>
+            <div class="row" id="seedDIV"></div>
+            <h2 id="irrigations">Irrigations</h2>
+            <hr>
+            <div class="row" id="irrigationDIV"></div>
+            <hr class="featurette-divider">
+        </div>
+        <footer class="container">
+            <p class="float-right">
+                <a href="#">TOP</a>
+            </p>
+            <div class="row">
+                -Powered by Hardhik Erat
+            </div>
+        </footer>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.all.min.js"></script>
+    <script src="./sketch.js"></script>
+</body>
+</html>
