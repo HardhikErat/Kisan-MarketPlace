@@ -151,7 +151,7 @@ function templateSettings(){
 						</div>
 					</div>
 								
-					<input type="submit" onclick="event.preventDefault(); saveSettings()" value="Save" class="w100--s btn my2">
+					<input type="submit" onclick="event.preventDefault(); saveSettings()" value="Save" class="w100--s btn my2" placeholder="submit">
 				
 				</form>
 			</section>  
